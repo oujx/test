@@ -1,0 +1,8 @@
+	function change($tmp){
+		//这里需要判断时间格式
+		$year = strtotime(*substring($tmp, 4));
+		$time = strtotime($tmp);
+		
+		$day = floor(($time - $year)/(3600*24));
+		return $day
+	}
