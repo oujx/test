@@ -1,0 +1,11 @@
+06、、
+	function fo($arr1){
+		if(is_array($arr1)){
+			foreach($arr1 as $key=>$value){
+				
+			}
+		
+		
+		}
+	}
+	
