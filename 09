@@ -1,0 +1,10 @@
+09、问答题	
+	(1) $mysqli= new Mysqli($host,$user,$paddwd,$database,$port);
+	(2) count($_POST['user_info'])数组未解析统计错误，
+	(3) for循环内最好不执行重复逻辑count($_POST['user_info'])
+	(4) $_POST['user_info'][$i]数据为解析会出错
+	(5) 数据库操作语句使用select * 增加性能消耗
+	(6) 数据库操作语句使用 $info['email'] 存在参数注入风险
+	(7) $mysqli->query() 返回结果$re_1 和 $re_2只有执行失败才是false，if(!$re_1|| !$re_2)判断条件不准确
+	(8) 最后插入语句错误
+	(9) 判断是否uname 和 email重复和插入数据时应使用批量操作方法
