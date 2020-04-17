@@ -1,0 +1,6 @@
+07、
+	(1)select A.id,A.city,B.province from city A, province B where A.province_id = B.id;
+	
+	(2)select A.id, B.province, B.count from province left join (select id,count(id) as count from city group by province_id) as B on A.province_id = B.id
+	
+	(3)(2)select A.id, B.province, B.count from province right join (select id,count(id) as count from city where count<15  group by province_id) as B on A.province_id = B.id;
